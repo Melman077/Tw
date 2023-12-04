@@ -3,6 +3,12 @@ document.addEventListener("mousemove", function (e) {
   player.y = e.y;
 });
 
+document.addEventListener("touchmove", function (e) {
+  player.x = e.x;
+  player.y = e.y;
+});
+
+
 function animate() {
   //Restart after dead
   if (hp > 0) {

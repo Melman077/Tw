@@ -1,0 +1,97 @@
+* {
+  font-family: cursive;
+}
+
+@keyframes starter {
+  0% {
+    width: 0;
+    height: 0;
+    font-size: 0;
+  }
+  100% {
+  }
+}
+.playerData {
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 100px;
+  display: flex;
+  animation: starter forwards 1s;
+}
+
+.score {
+  width: 10%;
+  height: 100%;
+}
+
+.hpBox {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+}
+
+.hp {
+  width: 50%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hpSvg {
+  margin-left: auto;
+}
+
+#canvas1 {
+  z-index: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .hpBox {
+    font-size: 10px;
+  }
+  .score {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .hpBox {
+    font-size: 20px;
+  }
+  .score {
+    font-size: 80px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hpBox {
+    font-size: 30px;
+  }
+  .score {
+    font-size: 90px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hpBox {
+    font-size: 35px;
+  }
+  .score {
+    font-size: 95px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hpBox {
+    font-size: 40px;
+  }
+  .score {
+    font-size: 100px;
+  }
+}

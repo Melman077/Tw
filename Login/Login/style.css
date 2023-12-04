@@ -1,0 +1,112 @@
+/* <head> */
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--natural);
+  overflow: hidden;
+}
+
+.space {
+  width: 100%;
+  height: calc(100% / 3);
+}
+
+@keyframes resize {
+  0% {
+    width: 50%;
+    height: 65%;
+  }
+  100% {
+    width: 5000px;
+    height: 15000px;
+  }
+}
+/* </head> */
+
+/* <body> */
+.mainBox {
+  background-color: var(--logColor);
+  height: 65%;
+  border-radius: 50px;
+  box-shadow: -10px 100px 100px 53px rgb(37, 37, 37);
+}
+
+.submit {
+  width: 20%;
+  height: 10%;
+  background-color: transparent;
+}
+
+.input {
+  height: 20%;
+  background-color: var(--submitColor);
+  border: 0px;
+  border-bottom: 2.5px solid black;
+  font-size: 15px;
+}
+
+.input:focus {
+  outline: 0;
+}
+/* </body> */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .mainBox {
+    width: 85%;
+    height: 50%;
+  }
+
+  .input {
+    width: 60%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .mainBox {
+    width: 60%;
+    height: 65%;
+  }
+
+  .input {
+    width: 60%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .mainBox {
+    width: 55%;
+    height: 65%;
+  }
+
+  .input {
+    width: 60%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .mainBox {
+    width: 45%;
+    height: 65%;
+  }
+
+  .input {
+    width: 60%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .mainBox {
+    width: 35%;
+    height: 65%;
+  }
+
+  .input {
+    width: 60%;
+  }
+}

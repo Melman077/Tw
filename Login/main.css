@@ -1,0 +1,18 @@
+/* <head> */
+* {
+  margin: 0;
+  padding: 0;
+  /* ----------COLORS-------------- */
+  --logColor: rgb(52, 48, 48);
+  --submitColor: transparent;
+  --natural: #6f6a6a;
+
+  font-family: cursive;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* </head> */
